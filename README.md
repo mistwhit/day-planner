@@ -5,7 +5,7 @@
 - This was accomplished through using dynamically upadated HTML and CSS powered by jQuery. 
 
 ## Screenshot
-![Screenshot of DAy Planner](.png)
+![Screenshot of Day Planner](.png)
 
 ## Link
 https://mistwhit.github.io/day-planner/
