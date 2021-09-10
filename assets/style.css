@@ -28,6 +28,7 @@ body {
   .time-block {
     text-align: center;
     border-radius: 15px;
+    color: deeppink;
   }
   
   .row {
@@ -69,4 +70,14 @@ body {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
   }
-  
+
+.clearBtnContainer {
+    text-align: center;
+}
+
+#clearBtn {
+    background-color: darkslategray;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+  }
