@@ -25,6 +25,88 @@ let button4 = $('#btn4');
 let button5 = $('#btn5');
 let clearBtn = $('#clearBtn');
 
+// Designates user input being stored in local storage
+div1.val(localStorage.getItem('Entry1'));
+div2.val(localStorage.getItem('Entry2'));
+div3.val(localStorage.getItem('Entry3'));
+div4.val(localStorage.getItem('Entry4'));
+div5.val(localStorage.getItem('Entry5'));
+div9.val(localStorage.getItem('Entry9'));
+div10.val(localStorage.getItem('Entry10'));
+div11.val(localStorage.getItem('Entry11'));
+div12.val(localStorage.getItem('Entry12'));
+
+// Saves the user input to local storage when the save button is clicked
+button9.on('click', function() {
+    if (div9.val() !== '') {
+        localStorage.setItem('Entry9', div9.val());
+    }
+});
+
+button10.on('click', function() {
+    if (div10.val() !== '') {
+        localStorage.setItem('Entry10', div10.val());
+    }
+});
+
+button11.on('click', function() {
+    if (div11.val() !== '') {
+        localStorage.setItem('Entry11', div11.val());
+    }
+});
+
+button12.on('click', function() {
+    if (div12.val() !== '') {
+        localStorage.setItem('Entry12', div12.val());
+    }
+});
+
+button1.on('click', function() {
+    if (div1.val() !== '') {
+        localStorage.setItem('Entry1', div1.val());
+    }
+});
+
+button2.on('click', function() {
+    if (div2.val() !== '') {
+        localStorage.setItem('Entry2', div2.val());
+    }
+});
+
+button3.on('click', function() {
+    if (div3.val() !== '') {
+        localStorage.setItem('Entry3', div3.val());
+    }
+});
+
+button4.on('click', function() {
+    if (div4.val() !== '') {
+        localStorage.setItem('Entry4', div4.val());
+    }
+});
+
+button5.on('click', function() {
+    if (div5.val() !== '') {
+        localStorage.setItem('Entry5', div5.val());
+    }
+});
+
+// Clears the user input that is saved in local storage
+function clear() {
+    localStorage.clear();
+    div1.val('');
+    div2.val('');
+    div3.val(''); 
+    div4.val('');
+    div5.val('');
+    div9.val('');
+    div10.val('');
+    div11.val('');
+    div12.val('');
+}
+
+clearBtn.on('click', clear);
+
 // Calls the current time from Moment
 var timeNow = parseInt(moment().format('HH'));
 
@@ -135,87 +217,5 @@ function checkTime() {
 }
 
 checkTime();
-
-// Designates user input being stored in local storage
-div1.val(localStorage.getItem('Entry1'));
-div2.val(localStorage.getItem('Entry2'));
-div3.val(localStorage.getItem('Entry3'));
-div4.val(localStorage.getItem('Entry4'));
-div5.val(localStorage.getItem('Entry5'));
-div9.val(localStorage.getItem('Entry9'));
-div10.val(localStorage.getItem('Entry10'));
-div11.val(localStorage.getItem('Entry11'));
-div12.val(localStorage.getItem('Entry12'));
-
-// Saves the user input to local storage when the save button is clicked
-button9.on('click', function() {
-    if (div9.val() !== '') {
-        localStorage.setItem('Entry9', div9.val());
-    }
-});
-
-button10.on('click', function() {
-    if (div10.val() !== '') {
-        localStorage.setItem('Entry10', div10.val());
-    }
-});
-
-button11.on('click', function() {
-    if (div11.val() !== '') {
-        localStorage.setItem('Entry11', div11.val());
-    }
-});
-
-button12.on('click', function() {
-    if (div12.val() !== '') {
-        localStorage.setItem('Entry12', div12.val());
-    }
-});
-
-button1.on('click', function() {
-    if (div1.val() !== '') {
-        localStorage.setItem('Entry1', div1.val());
-    }
-});
-
-button2.on('click', function() {
-    if (div2.val() !== '') {
-        localStorage.setItem('Entry2', div2.val());
-    }
-});
-
-button3.on('click', function() {
-    if (div3.val() !== '') {
-        localStorage.setItem('Entry3', div3.val());
-    }
-});
-
-button4.on('click', function() {
-    if (div4.val() !== '') {
-        localStorage.setItem('Entry4', div4.val());
-    }
-});
-
-button5.on('click', function() {
-    if (div5.val() !== '') {
-        localStorage.setItem('Entry5', div5.val());
-    }
-});
-
-// Clears the user input that is saved in local storage
-function clear() {
-    localStorage.clear();
-    div1.val('');
-    div2.val('');
-    div3.val(''); 
-    div4.val('');
-    div5.val('');
-    div9.val('');
-    div10.val('');
-    div11.val('');
-    div12.val('');
-}
-
-clearBtn.on('click', clear);
 
 });
